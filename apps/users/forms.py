@@ -2,6 +2,7 @@ from django import forms
 from apps.users.models import Account, Event, Speaker, Venue, Comment, Ticket, Job, Forum, ForumComment
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import UserCreationForm
+from django.utils.translation import gettext_lazy as _
 
 class RegistrationForm(UserCreationForm):
     password1 = forms.CharField(
